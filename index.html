@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <title>
+            Yuvraj Rauniyar
+        </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');            *{
+                font-family: "Ubuntu", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-variation-settings:
+                "wdth" 100;
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                padding-left: 100px;
+                padding-right: 100px;
+                text-align: center;
+            }
+            header span{
+                font-weight: bold;
+                font-size: large;
+            }
+            header span a{
+                margin-left: 30px;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .line{
+                height: 0.5px;
+                border: none;
+                margin-left: 50px;
+                margin-right: 50px;
+                background-color: rgb(48, 45, 45);
+            }
+            .naam{
+                text-align: center;
+                margin-top: 0%;
+                font-size: 80px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            h1{
+                text-align: center;
+                margin-top: 0%;
+                font-size: 35px;
+            }
+            .btnspan{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+            .btn1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border: none;
+                border-radius: 50px;
+                height: 50px;
+                width: 200px;
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                
+            }
+            .material-symbols-outlined{
+                background-color: white;
+                color: rgb(0, 0, 0);
+                font-size: 22px;
+            }
+            .marquee-wrapper{
+                overflow: hidden;
+                margin-left: 80px;
+                margin-right: 80px;
+                position: relative;
+            }
+            .marquee-wrapper::before,
+            .marquee-wrapper::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 120px;
+                height: 100%;
+                z-index: 2;
+            }
+            .marquee-wrapper::before{
+                left: 0;
+                background: linear-gradient(to right, black, transparent);
+            }
+            .marquee-wrapper::after{
+                right: 0;
+                background: linear-gradient(to left, black, transparent);
+            }
+            .marquee-content{
+                display: flex;
+                width: max-content;
+                gap: 50px;
+                animation: scroll 20s linear infinite;
+            }
+            .tech{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-width: 100px;
+                color: white;
+            }
+            .tech img{
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+            @keyframes scroll{
+                from{
+                    transform: translateX(0);
+                }
+                to{
+                    transform: translateX(-50%);
+                }
+            }
+            .about{
+                display: flex;
+                margin-top: 300px;
+                margin-left: 150px;
+                margin-right: 200px;
+            }
+            .about .head {
+                /* display: flex; */
+                width: 500px;
+                word-spacing: 4px;
+                line-height: 25px;
+            }
+            .about .head h2{
+                color: rgb(232, 232, 255);
+                font-size: 50px;
+                margin-bottom: 25px;
+            }
+            .about .head p{
+                color: rgb(232, 232, 255);
+            }
+
+            .btnspan1{
+                display: flex;
+                /* text-align: center;
+                justify-content: center; */
+            }
+            .btn11{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                /* border: none; */
+                border-color: white;
+                border-radius: 50px;
+                height: 50px;
+                width: 200px;
+                color: white;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                transition: 0.3s;
+                
+            }
+            .btn11:hover{
+                background-color: white;
+                color: black;
+            }
+            .pp img{
+                display: flex;
+                margin-top: 90px;
+                width: 350px;
+                height: auto;
+                border-radius: 50%;
+                margin-left: 250px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <span>YUVRAJ RAUNIYAR</span>
+            <span>
+                <a href="">About</a>
+                <a href="">Project</a>
+                <a href=""> Get in touch</a>
+            </span>
+        </header>
+        <hr class="line">
+        <span class="mid">
+            <p style="color:#00c951; text-align: center;margin-top: 130px;">•&nbsp;Currently Learning DSA & MERN</p>
+            <p class="naam">YUVRAJ RAUNIYAR</p>
+            <h1><span id="typing" style="color: rgb(160, 160, 160);"></span></h1>
+            <div class="btnspan"><button class="btn1"> Get in touch &nbsp;<span class="material-symbols-outlined">arrow_outward</span></button></div>
+            <p style="text-align: center; margin-top: 120px;margin-bottom: 50px;">Tech Stack I've worked with</p>
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <div class="tech"><img src="javascript-svgrepo-com.svg"><span>Javascript</span></div>
+                    <div class="tech"><img src="css-3-svgrepo-com.svg"><span>CSS</span></div>
+                    <div class="tech"><img src="mongodb-svgrepo-com.svg"><span>Mongo DB</span></div>
+                    <div class="tech"><img src="database-svgrepo-com.svg"><span>My SQL</span></div>
+                    <div class="tech"><img src="react-svgrepo-com.svg"><span>React js</span></div>
+                    <div class="tech"><img src="python-svgrepo-com.svg"><span>Python</span></div>
+                    <div class="tech"><img src="html-5-svgrepo-com.svg"><span>HTML</span></div>
+                    <div class="tech"><img src="node-js-svgrepo-com.svg"><span>Node js</span></div>
+
+                    <div class="tech"><img src="javascript-svgrepo-com.svg"><span>Javascript</span></div>
+                    <div class="tech"><img src="css-3-svgrepo-com.svg"><span>CSS</span></div>
+                    <div class="tech"><img src="mongodb-svgrepo-com.svg"><span>Mongo DB</span></div>
+                    <div class="tech"><img src="database-svgrepo-com.svg"><span>My SQL</span></div>
+                    <div class="tech"><img src="react-svgrepo-com.svg"><span>React js</span></div>
+                    <div class="tech"><img src="python-svgrepo-com.svg"><span>Python</span></div>
+                    <div class="tech"><img src="html-5-svgrepo-com.svg"><span>HTML</span></div>
+                    <div class="tech"><img src="node-js-svgrepo-com.svg"><span>Node js</span></div>
+                </div>
+            </div>
+        </span>
+        <div class="about">
+            <div class="head">
+                <h2>About Me !</h2>
+                <hr>
+                <p>Hi, I’m Yuvraj — a passionate developer and technology enthusiast with a strong interest in web development and problem-solving. I enjoy building clean, responsive, and interactive websites that combine functionality with modern design. Constantly exploring new technologies, I focus on improving my skills in programming, development, and creating better digital experiences. <br><br>Alongside web development, I actively practice coding and problem-solving to strengthen my technical foundation. I enjoy working on projects, learning new tools, and challenging myself to grow as a developer. My goal is to continuously improve, build impactful solutions, and turn ideas into meaningful digital products.</p>
+                <div class="btnspan1"><button class="btn11"> About Me &nbsp; <span class="material-symbols-outlined" style="background-color: black; border-radius: 50%; color: white;">arrow_outward</span></button></div>
+            </div>
+            <div class="pp">
+                <img src="pp.jpeg" alt="">
+            </div>
+        </div>
+    </body>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typing', {
+        strings: ['Software Developer', 'Full Stack - MERN', 'DSA Enthusiast'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
+        });
+    </script>
+</html>
