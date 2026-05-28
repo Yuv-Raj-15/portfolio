@@ -181,6 +181,89 @@
                 margin-left: 250px;
 
             }
+            .projects{
+                margin-top: 450px;
+                color: rgb(232, 232, 255);
+                width: 100%
+            }
+            .projects h3{
+                font-size: 40px;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+            .pj1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30%;
+                width: 750px;
+            }
+            .pjstyle{
+                background-color: white;
+                color: black;
+                border-radius: 20px;
+                width: 80px;
+                margin-left: 10px;
+                margin-bottom: 30px;
+                padding-left:20px ;
+                padding-right:20px ;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .end{
+                margin-top: 250px;
+                display: flex;
+                align-items: center;
+                margin-left: 25%;
+            }
+            .end img{
+                height: 38px;
+                width: auto;
+                margin-right: 20px;
+                animation: shake;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes shake{
+                0%{
+                    transform: rotate(0deg);
+                }
+                25%{
+                    transform: rotate(20deg);
+                }
+                50%{
+                    transform: rotate(-20deg);
+                }
+                75%{
+                    transform: rotate(20deg);
+                }
+                100%{
+                    transform: rotate(0deg);
+                }
+            }
+            .tx2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tx22 p{
+                font-size: 30px;
+                font-weight: 1000;
+            }
+            footer{
+                margin-left: 35%;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            footer .icn img{
+                height: 20px;
+                width: auto;
+                margin-left: 30px;
+            }
+            a{
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
@@ -232,6 +315,44 @@
                 <img src="pp.jpeg" alt="">
             </div>
         </div>
+
+        <div class="projects">
+            <h3>My Projects</h3>
+            <div class="pj1">
+                <div class="card1">
+                <img src="Small promotional tile.png" alt="" width="350px" height="auto" style="border-radius: 10px; margin-right: 40px;">
+                </div>
+                    <p class="txt1"><font style="font-size: 35;font-weight: 900;">Leetcode Ai</font> <br><br><font style="line-height: 25px;">A smart browser extension that acts as a personal DSA mentor by injecting context-aware AI hints and minimal code fixes directly into the LeetCode editor, without spoiling the solution.</font>
+                        <br><br>
+                        <font class="pjstyle">HTML</font><font class="pjstyle">CSS</font><font class="pjstyle">JAVA</font>
+                        <font class="pjstyle">JSON</font>
+                        <br><br><br><font><button class="btn11"> View Project &nbsp; <span class="material-symbols-outlined" style="background-color: black; border-radius: 50%; color: white;">arrow_outward</span></button></font>
+                    </p>
+            </div>
+        </div>
+        <div class="end">
+            <img src="handshake-svgrepo-com.svg" alt=""> <font style="color: rgb(156, 150, 150);">SAY HELLO</font>
+        </div>
+        <hr class="line" style="margin-left: 25%; margin-right: 25%;">
+        <br>
+        <div class="tx2">
+            <div class="tx22">
+                <p>
+                    I'm open for projects, internship & full-time roles.
+                </p>
+                
+                <button class="btn11"> Get in touch &nbsp; <span class="material-symbols-outlined" style="background-color: black; border-radius: 50%; color: white;">arrow_outward</span></button>
+                
+            </div>
+        </div>
+        <hr class="line" style="margin-top: 75px;">
+        <footer>
+            <div style="color: rgb(96, 99, 124); font-size: 13px;">
+                © 2026 Yuvraj Rauniyar. All rights reserved.
+            </div>
+            <div class="icn" style="color: rgb(96, 99, 124); font-size: 10px; margin-left: 400px;"><a href=""><img src="github-svgrepo-com.svg" alt=""> </a><a href=""><img src="instagram-2-1-logo-svgrepo-com.svg" alt=""></a> <a href=""><img src="linkedin-color-svgrepo-com.svg" alt=""></a></div>
+        </footer>
+
     </body>
 
 
