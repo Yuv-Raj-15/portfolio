@@ -15,7 +15,7 @@
                 color: rgb(255, 255, 255);
             }
             header{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 justify-content: space-between;
                 padding: 10px;
                 padding-left: 100px;
@@ -52,12 +52,12 @@
                 font-size: 35px;
             }
             .btnspan{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 text-align: center;
                 justify-content: center;
             }
             .btn1{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
                 background-color: white;
@@ -100,13 +100,13 @@
                 background: linear-gradient(to left, black, transparent);
             }
             .marquee-content{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 width: max-content;
                 gap: 50px;
                 animation: scroll 20s linear infinite;
             }
             .tech{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 flex-direction: column;
                 align-items: center;
                 min-width: 100px;
@@ -126,13 +126,14 @@
                 }
             }
             .about{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 margin-top: 300px;
                 margin-left: 150px;
                 margin-right: 200px;
             }
             .about .head {
-                /* display: flex; */
+                /* display: flex; flex-wrap: wrap; */
+                flex-direction: column;
                 width: 500px;
                 word-spacing: 4px;
                 line-height: 25px;
@@ -147,12 +148,12 @@
             }
 
             .btnspan1{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 /* text-align: center;
                 justify-content: center; */
             }
             .btn11{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
                 background-color: black;
@@ -173,7 +174,8 @@
                 color: black;
             }
             .pp img{
-                display: flex;
+                display: flex; flex-wrap: wrap;
+                flex-wrap: wrap;
                 margin-top: 90px;
                 width: 350px;
                 height: auto;
@@ -192,7 +194,7 @@
                 text-align: center;
             }
             .pj1{
-                display: flex;
+                display: flex; 
                 justify-content: center;
                 align-items: center;
                 margin-left: 30%;
@@ -212,7 +214,7 @@
             }
             .end{
                 margin-top: 250px;
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 align-items: center;
                 margin-left: 25%;
             }
@@ -242,7 +244,7 @@
                 }
             }
             .tx2{
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
             }
@@ -251,20 +253,52 @@
                 font-weight: 1000;
             }
             footer{
-                margin-left: 35%;
+                color: rgb(96, 99, 124);
+                /* margin-left: 35%; */
                 padding: 10px;
-                display: flex;
+                display: flex; flex-wrap: wrap;
                 justify-content: center;
+                flex-direction: column;
+                font-size: 13px
+            }
+            footer div p{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                color: rgb(96, 99, 124);
+
+            }
+            footer .tt1{
+                width: 100%;
+            }
+            .icn{
+                width: 100%;
+                text-align: center;
+                margin-top: 5px;
             }
             footer .icn img{
                 height: 20px;
                 width: auto;
-                margin-left: 30px;
             }
-            a{
+            .icn a{
                 text-decoration: none;
+                margin-left: 10px;
             }
+            .mid .midp{
+                margin-top: 130px;
+            }
+            .card1 img{
+                border-radius: 10px; margin-right: 40px; 
+                width: 350px; height: auto;
+            }
+            .txt2{
+                font-size: 35;font-weight: 900;
+            }
+            .txt3{
+                line-height: 25px;
+            }
+            
         </style>
+        <link rel="stylesheet" href="responsive.css">
     </head>
     <body>
         <header>
@@ -277,7 +311,7 @@
         </header>
         <hr class="line">
         <span class="mid">
-            <p style="color:#00c951; text-align: center;margin-top: 130px;">•&nbsp;Currently Learning DSA & MERN</p>
+            <p class="midp" style="color:#00c951; text-align: center;;">•&nbsp;Currently Learning DSA & MERN</p>
             <p class="naam">YUVRAJ RAUNIYAR</p>
             <h1><span id="typing" style="color: rgb(160, 160, 160);"></span></h1>
             <div class="btnspan"><button class="btn1"> Get in touch &nbsp;<span class="material-symbols-outlined">arrow_outward</span></button></div>
@@ -318,11 +352,12 @@
 
         <div class="projects">
             <h3>My Projects</h3>
+            <hr class="line">
             <div class="pj1">
                 <div class="card1">
-                <img src="Small promotional tile.png" alt="" width="350px" height="auto" style="border-radius: 10px; margin-right: 40px;">
+                <img src="Small promotional tile.png" alt=""  >
                 </div>
-                    <p class="txt1"><font style="font-size: 35;font-weight: 900;">Leetcode Ai</font> <br><br><font style="line-height: 25px;">A smart browser extension that acts as a personal DSA mentor by injecting context-aware AI hints and minimal code fixes directly into the LeetCode editor, without spoiling the solution.</font>
+                    <p class="txt1"><font class="txt2">Leetcode Ai</font> <br><br><font class="txt3">A smart browser extension that acts as a personal DSA mentor by injecting context-aware AI hints and minimal code fixes directly into the LeetCode editor, without spoiling the solution.</font>
                         <br><br>
                         <font class="pjstyle">HTML</font><font class="pjstyle">CSS</font><font class="pjstyle">JAVA</font>
                         <font class="pjstyle">JSON</font>
@@ -331,9 +366,9 @@
             </div>
         </div>
         <div class="end">
-            <img src="handshake-svgrepo-com.svg" alt=""> <font style="color: rgb(156, 150, 150);">SAY HELLO</font>
+            <img src="handshake-svgrepo-com.svg" alt=""> <font class="hlo" style="color: rgb(156, 150, 150);">SAY HELLO</font>
         </div>
-        <hr class="line" style="margin-left: 25%; margin-right: 25%;">
+        <hr class="line" style="margin-left: 18%; margin-right: 18%;">
         <br>
         <div class="tx2">
             <div class="tx22">
@@ -345,12 +380,12 @@
                 
             </div>
         </div>
-        <hr class="line" style="margin-top: 75px;">
+        <hr class="line" style="margin-top: 75px; margin-left: 0px; margin-right: 0px;">
         <footer>
-            <div style="color: rgb(96, 99, 124); font-size: 13px;">
-                © 2026 Yuvraj Rauniyar. All rights reserved.
+            <div class="tt1">
+                <p style="text-align: center;">© 2026 Yuvraj Rauniyar. All rights reserved.</p>
             </div>
-            <div class="icn" style="color: rgb(96, 99, 124); font-size: 10px; margin-left: 400px;"><a href=""><img src="github-svgrepo-com.svg" alt=""> </a><a href=""><img src="instagram-2-1-logo-svgrepo-com.svg" alt=""></a> <a href=""><img src="linkedin-color-svgrepo-com.svg" alt=""></a></div>
+            <div class="icn" style="color: rgb(96, 99, 124);"><a href=""><img src="github-svgrepo-com.svg" alt=""> </a><a href=""><img src="instagram-2-1-logo-svgrepo-com.svg" alt=""></a> <a href=""><img src="linkedin-color-svgrepo-com.svg" alt=""></a></div>
         </footer>
 
     </body>
