@@ -33,13 +33,13 @@
             .line{
                 height: 0.5px;
                 border: none;
-                margin-left: 25px;
-                margin-right: 25px;
+                margin-left: 10px;
+                margin-right: 10px;
                 background-color: rgb(48, 45, 45);
             }
             .mid .midp{
                 margin-top: 75px;
-                font-size: 10px;
+                font-size: 15px;
             }
             .naam{
                 text-align: center;
@@ -65,18 +65,18 @@
                 background-color: white;
                 border: none;
                 border-radius: 50px;
-                height: 25px;
-                width: 100px;
+                height: 40px;
+                width: 170px;
                 color: black;
                 font-weight: bold;
-                font-size: 10px;
+                font-size: 20px;
                 cursor: pointer;
                 
             }
             .material-symbols-outlined{
                 background-color: white;
                 color: rgb(0, 0, 0);
-                font-size: 11px;
+                font-size: 21px;
             }
             .marquee-wrapper{
                 overflow: hidden;
@@ -136,8 +136,8 @@
                 flex-direction: column-reverse;
                 align-items: center;
                 margin-top: 150px;
-                margin-left: 50px;
-                margin-right: 50px;
+                margin-left: 0px;
+                margin-right: 0px;
             }
             .about .head {
                 /* display: flex; flex-wrap: wrap; */
@@ -207,23 +207,34 @@
                 margin-bottom: 15px;
                 text-align: center;
             }
+            .card1{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             .card1 img{
                 border-radius: 10px; margin-right: 20px; 
-                width: 250px; height: auto;
+                width: 200px; height: auto;
             }
             .pj1{
                 display: flex; 
                 justify-content: center;
                 align-items: center;
                 margin-left: auto;
-                width: auto;
+                width: 100%;
+            }
+            .txt1{
+                text-align: center;
+                margin-right: 0px;
             }
             .txt2{
-                font-size: 25;font-weight: 500;
+                font-size: 20;font-weight: 500;
             }
             .txt3{
-                font-size: 13px;
-                line-height: 18px;
+                font-size: 10px;
+                line-height: 15px;
             }
             .pjstyle{
                 background-color: white;
@@ -234,23 +245,32 @@
                 margin-left: 10px;
                 margin-bottom: 0px;
                 padding:6px 14px ;
-                display: inline-block;
                 font-size: 8px;
                 width: fit-content;
+                line-height: 0px;
+                
             }
             .end{
                 margin-top: 150px;
                 display: flex; flex-wrap: wrap;
                 align-items: center;
-                margin-left: 25%;
+                margin-left: 0%;
             }
             .end img{
                 height: 25px;
                 width: auto;
-                margin-right: 20px;
+                margin-right: 10px;
+                margin-left: 15px;
                 animation: shake;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
+            }
+            .hlline{
+                height: 0.5px;
+                border: none;
+                margin-left: 15px;
+                margin-right: 15px;
+                background-color: rgb(48, 45, 45);
             }
             .end .hlo{
                 font-size: 13px;
@@ -272,7 +292,10 @@
                     transform: rotate(0deg);
                 }
             }
-            .tx2{
+            #btnn1{
+                width: 100%;
+            }
+            .tx22{
                 display: flex; flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
@@ -281,7 +304,7 @@
             }
             .tx22 p{
                 margin-top: 0px;
-                font-size: 15px;
+                font-size: 25px;
                 font-weight: 1000;
             }
   
