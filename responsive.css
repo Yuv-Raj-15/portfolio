@@ -1,6 +1,6 @@
 @media screen and (max-width:768px) {
                 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');           
-                 *{
+                 body{
                 font-family: "Ubuntu", sans-serif;
                 font-optical-sizing: auto;
                 font-style: normal;
@@ -311,5 +311,14 @@
 
             a{
                 text-decoration: none;
+            }
+
+            .crl div{
+                margin-top: 5px;
+                font-size: 13px;
+                color: #d1d5dc;
+            }
+            .hero .matrix{
+                margin-top: 50px;
             }
 }
