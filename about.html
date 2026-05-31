@@ -118,7 +118,7 @@
                 align-items: center;
                 overflow: hidden;
                 position: relative;
-                margin-left: 12%;
+                /* margin-left: 12%; */
             }
             .matrixvideo {
                 position: absolute;
@@ -199,13 +199,160 @@
                 font-size: 50px;
             }
             
-
+            .nerd{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgb(238, 238, 252);
+                font-size: 30px;
+                font-weight: 700;
+                margin-top: 35px;
+            }
+            .exp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 50px;
+            }
+            .exp div{
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: center; */
+                text-align: center;
+            }
+            .exp hr{
+                width: 450px;
+                height: 0.5px;
+                border: none;
+                background-color: rgb(48, 45, 45);
+            }
+            .head{
+                font-weight: 600;
+                color: #818181;
+                font-size: 25px;
+                
+            }
+            .content{
+                font-size: 18px;
+            }
+            .skill{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                /* flex-wrap: wrap;
+                flex-direction: column; */
+            }
+            .sk1{
+                width: 450px;
+            }
+            .skill font{
+                color: #d1d5dc;
+            }
+            .skill h3{
+                color: #05df72;
+            }
+            .skr{
+                height: 0.5px;
+                border: none;
+                background-color: rgb(48, 45, 45);
+            }
+            .cp1,.cp2{
+                position: relative;
+                height: 210px;
+                width: 220px;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+            }
+            .front,.back,.f1,.b1{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 30px;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.6s;
+                backface-visibility: hidden;
+            }
+            .back{
+                background-image: url(leetcode.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                transform: rotateY(180deg);
+            }
+            .b1{
+                background-image: url(codeforcesback.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                transform: rotateY(180deg);
+            }
+            .cp1:hover .back{
+                transform: rotateY(0deg);
+            }
+            .cp1:hover .front{
+                transform: rotateY(-180deg);
+            }
+            .front{
+                background-image: url(back.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .f1{
+                background-image: url(codeforces.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .cp2:hover .f1{
+                transform: rotateY(-180deg);
+            }
+            .cp2:hover .b1{
+                transform: rotateY(0deg);
+            }
+            .btnspan{
+                display: flex; flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+            }
+            .btn1{
+                display: flex; flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(255, 255, 255, 0.397);
+                border: none;
+                border-radius: 50px;
+                height: 40px;
+                width: 100px;
+                color: rgb(81, 79, 79);
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                border-color: white;
+                
+            }
+            .material-symbols-outlined{
+                background-color: rgba(255, 255, 255, 0);
+                color: rgb(81, 79, 79);
+                font-size: 15px;
+            }
+            .sk2{
+                margin-top: 20px;
+            }
     </style>
     <link rel="stylesheet" href="responsive.css">
     </head>
     <body>
         <header>
-            <span>YUVRAJ RAUNIYAR</span>
+            <span><a href="index.html" target="_self">YUVRAJ RAUNIYAR</a></span>
             <span>
                 <a href="">About</a>
                 <a href="">Project</a>
@@ -250,21 +397,80 @@
                 <div class="matxt">
                     <div class="matxt1">Yuvraj Rauniyar</div>
                     <div class="matxt2">Software Developer | MERN</div>
-                    <div class="matxt3"><a href="https://github.com/Yuv-Raj-15"><img src="github-svgrepo-com.svg" alt=""> </a><a href="https://www.instagram.com/yuvraj_rauniyar15/"><img src="instagram-2-1-logo-svgrepo-com.svg" alt=""></a> <a href="https://www.linkedin.com/in/yuvraj-rauniyar-376210372/"><img src="linkedin-color-svgrepo-com.svg" alt=""></a><a href="https://youtube.com/@codewithyuvraj?si=SJzGPU55QQqXbWMs"><img src="youtube-color-svgrepo-com.svg" alt=""></div>
+                    <div class="matxt3"><a href="https://github.com/Yuv-Raj-15"><img src="github-svgrepo-com.svg" alt=""> </a><a href="https://www.instagram.com/yuvraj_rauniyar15/"><img src="instagram-2-1-logo-svgrepo-com.svg" alt=""></a> <a href="https://www.linkedin.com/in/yuvraj-rauniyar-376210372/"><img src="linkedin-color-svgrepo-com.svg" alt=""></a><a href="https://youtube.com/@codewithyuvraj?si=SJzGPU55QQqXbWMs"><img src="youtube-color-svgrepo-com.svg" alt=""></a></div>
 
                 </div>
                 </div>
             </div>
         </div>
+        <span class="nerd">I'm a developer, problem-solver, & code nerd.</span>
+        <div class="exp">
+            <div>
+                <span class="head">EXPERIENCE</span><br><span class="content">⏳ Not Yet</span>
+            </div>
+            <hr>
+            <div>
+            <span class="head">LOCATION</span><br><span class="content">📍India</span>
+            </div>
+            <hr>
+            <div>
+            <span class="head">INTERNSHIP</span><br><span class="content">👋  Available</span>
+            </div>
+        </div>
 
+        <div class="skill">
+            <div class="sk1">
+                <h2 style="color: #d1d5dc;">My Skills</h2>
+                <hr class="skr">
+                <p><h3>Web Development</h3>
+                    <font>Building modern, responsive, and user-friendly websites with clean UI and smooth performance.</font>
+                </p>
+                <p><h3>Backend Development</h3>
+                    <font>Developing basic APIs, authentication systems, and backend logic for web applications.</font>
+                
+                </p>
+                <p><h3>DSA & Problem Solving</h3>
+                    <font>Strong foundation in Data Structures & Algorithms, recursion, dynamic programming, and optimization.</font>
+                
+                </p>
+                <p><h3>AI/ML (Learning)</h3>
+                    <font>Exploring Artificial Intelligence and Machine Learning concepts to build intelligent applications.</font>
+                
+                </p>
+            </div>
+            <div class="sk2">
+                <h2 style="color: #d1d5dc;">Coding Profiles</h2>
+                <hr class="skr" id="hlinephone">
+                <div>
+                    <div class="cps">
+                        <div class="cp1">
+                            <div class="front">
 
+                            </div>
+                            <div class="back">
+                                <div class="btnspan"><button onclick="window.open('https://leetcode.com/u/R_Yuvraj/' , '_self')" class="btn1" style="height: 40; width: 70; font-size: 15px; background-color: rgba(255, 255, 255, 0.397);color: rgb(81, 79, 79);"> Visit &nbsp;<span class="material-symbols-outlined" style="color: rgb(81, 79, 79);background-color: rgba(255, 255, 255, 0); font-size: 15px;">arrow_outward</span></button></div>
+                            </div>
+                        </div>
+                        <div class="cp2">
+                            <div class="f1">
+
+                            </div>
+                            <div class="b1">
+                                <div class="btnspan"><button onclick="window.open('https://codeforces.com/profile/Yuvraj_R' , '_blank')" class="btn1" style="height: 40; width: 70; font-size: 15px; background-color: rgba(255, 255, 255, 0.397);color: rgb(81, 79, 79);"> Visit &nbsp;<span class="material-symbols-outlined" style="color: rgb(81, 79, 79);background-color: rgba(255, 255, 255, 0); font-size: 15px;">arrow_outward</span></button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <hr class="line"  style="margin-top: 75px; margin-left: 0px; margin-right: 0px;">
         <footer>
             <div class="tt1">
                 <p style="text-align: center;">© 2026 Yuvraj Rauniyar. All rights reserved.</p>
             </div>
-            <div class="icn" style="color: rgb(96, 99, 124);"><a href="https://github.com/Yuv-Raj-15"><img src="github-svgrepo-com.svg" alt=""> </a><a href="https://www.instagram.com/yuvraj_rauniyar15/"><img src="instagram-2-1-logo-svgrepo-com.svg" alt=""></a> <a href="https://www.linkedin.com/in/yuvraj-rauniyar-376210372/"><img src="linkedin-color-svgrepo-com.svg" alt=""></a></a><a href="https://youtube.com/@codewithyuvraj?si=SJzGPU55QQqXbWMs"><img src="youtube-color-svgrepo-com.svg" alt=""></div>
+            <div class="icn" style="color: rgb(96, 99, 124);"><a href="https://github.com/Yuv-Raj-15" target="_blank"><img src="github-svgrepo-com.svg" alt=""> </a><a href="https://www.instagram.com/yuvraj_rauniyar15/" target="_blank"><img src="instagram-2-1-logo-svgrepo-com.svg" alt=""></a> <a href="https://www.linkedin.com/in/yuvraj-rauniyar-376210372/ target="_blank""><img src="linkedin-color-svgrepo-com.svg" alt=""></a></a><a href="https://youtube.com/@codewithyuvraj?si=SJzGPU55QQqXbWMs" target="_blank"><img src="youtube-color-svgrepo-com.svg" alt=""></div>
         </footer>
     </body>
 </html>
