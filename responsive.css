@@ -359,6 +359,12 @@
             #hlinephone{
                 margin-bottom: 20px;
             }
-            
+            .bline{
+                margin-top: 25vh;
+            }
+            .extension{
+                height: 230px;
+                width: 300px;
+            }
 
 }
