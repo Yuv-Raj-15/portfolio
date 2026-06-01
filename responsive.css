@@ -366,5 +366,28 @@
                 height: 230px;
                 width: 300px;
             }
+            .tform{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* margin-left: 50px; */
+            }
+            .tform h1{
+                font-size: 40px;
+                margin-top: 20px;
+            }
+            .tform p{
+                font-size: 15px;
+            }
+            form input{
+                width: 280px;
+                margin-bottom: 20px;
+            }
+            form textarea{
+                width: 280px;
+            }
+            form button{
+                width: 280px;
+            }
 
 }
